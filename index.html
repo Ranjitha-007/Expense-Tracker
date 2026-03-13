@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome Back!<br>
+         Track your Expenses</h1>
+    </div>
+    <div class="maincontent">
+        <div class="dashboard">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="cardtitle">Monthly Income</h3>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="monthlyincome">₹0.00</div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="cardtitle">Monthly Expenses</h3>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="monthlyexpense">₹0.00</div>
+                <div class="change">
+                    <i class="fas fa-arrow-up"></i>
+                    <span class="expense-change">0%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chartsection"
+    style="margin-top: 1%;">
+        <div class="card">
+            <div class="card-header">
+                <div class="Expense">
+                    <h3 class="card-title">Expenses</h3>
+                    <div class="balance-box">
+                        <p style="
+                        font-size: 20px;
+                        font-weight:600;
+                        color: white;
+                        padding-left: 9rem;">
+                            Total Balance</p>
+                        <h2 style="font-size:30px;
+                        font-weight: bold;
+                        color: white;
+                        padding-left: 9.7rem;" class="balance">
+                            ₹0.00</h2>
+                        <div class="income-expense">
+                            <div>
+                                <p style="
+                        font-size: 20px;
+                        font-weight:600;
+                        color: white;">Income</p>
+                                <h2 style="
+                        font-size: 18px;
+                        font-weight:400;
+                        color: white;" class="income">₹0.00</h2>
+                            </div>
+                            <div>
+                                <p style="
+                        font-size: 20px;
+                        font-weight:600;
+                        color: white;">Expense</p>
+                                <h2 style="
+                        font-size: 18px;
+                        font-weight:400;
+                        color: white;"class="expense">₹0.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="margin-top: 10%;
+                    margin-bottom: 0%;
+                    padding: 1rem;">Transactions</h3>
+                    <ul class="Transactions-list"></ul>
+                    <h3 style="
+                    padding: 1rem;">Add Transactions</h3>
+                    <form style=" padding: 1rem;
+                     margin: 15px 0;" class="form">
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" placeholder="Enter name" required /><br>
+                        <br>
+                        <label for="amount">Amount</label><br>
+                        <input type="number" id="amount" placeholder="0" required /><br>
+                        <br>
+                        <label for="date">Date</label><br>
+                        <input type="date" id="date" placeholder="dd-mm-yyyy" required /><br>
+                        <br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
